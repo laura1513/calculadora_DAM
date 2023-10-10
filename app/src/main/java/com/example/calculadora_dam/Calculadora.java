@@ -29,7 +29,7 @@ public class Calculadora {
 
             }
         } catch (Exception e) {
-            return "-1";
+            return String.valueOf(-1);
         }
         return cadena;
     }
