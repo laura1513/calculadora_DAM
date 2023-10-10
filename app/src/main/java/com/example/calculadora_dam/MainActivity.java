@@ -61,6 +61,11 @@ public class MainActivity extends AppCompatActivity {
         TextView res = (TextView) findViewById(R.id.resultado);
         res.setText(res.getText()+"-");
     }
+    public void por(View view) {
+        TextView res = (TextView) findViewById(R.id.resultado);
+        res.setText(res.getText()+"*");
+    }
+
     public void c(View view) {
         TextView res = (TextView) findViewById(R.id.resultado);
         res.setText("");

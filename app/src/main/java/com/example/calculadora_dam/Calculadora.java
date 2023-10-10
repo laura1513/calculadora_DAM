@@ -3,20 +3,24 @@ package com.example.calculadora_dam;
 public class Calculadora {
     public static String calcular(String cadena) {
         int mas;
-        String num1;
-        String num2;
         int menos;
+        int por;
         try {
             if (cadena.contains("+")) {
                 mas = cadena.indexOf("+");
-                num1 = cadena.substring(0, (mas));
-                num2 = cadena.substring((mas) + 1, cadena.length());
-                cadena = Integer.toString(Integer.parseInt(num1) + Integer.parseInt(num2));
+                String num1 = cadena.substring(0, (mas));
+                String num2 = cadena.substring((mas) + 1, cadena.length());
+                return String.valueOf(Integer.parseInt(calcular(num1)) + Integer.parseInt(calcular(num2)));
             } else if (cadena.contains("-")) {
                 menos = cadena.indexOf("-");
-                num1 = cadena.substring(0, (menos));
-                num2 = cadena.substring((menos) + 1, cadena.length());
-                cadena = Integer.toString(Integer.parseInt(num1) - Integer.parseInt(num2));
+                String num1 = cadena.substring(0, (menos));
+                String num2 = cadena.substring((menos) + 1, cadena.length());
+                return String.valueOf(Integer.parseInt(calcular(num1)) - Integer.parseInt(calcular(num2)));
+            } else if (cadena.contains("*")) {
+            por = cadena.lastIndexOf("*");
+            String num1 = cadena.substring(0, (por));
+            String num2 = cadena.substring((por) + 1, cadena.length());
+            return String.valueOf(Integer.parseInt(calcular(num1)) * Integer.parseInt(calcular(num2)));
             }
         } catch (Exception e) {
             cadena = "-1";

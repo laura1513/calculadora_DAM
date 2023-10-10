@@ -194,7 +194,7 @@
         android:layout_marginEnd="10dp"
         android:onClick="menos"
         android:text="@string/menos"
-        app:layout_constraintBottom_toTopOf="@+id/igual"
+        app:layout_constraintBottom_toTopOf="@+id/por"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/seis"
         app:layout_constraintTop_toBottomOf="@+id/mas" />
@@ -209,6 +209,20 @@
         android:onClick="resultado"
         android:text="@string/igual"
         app:layout_constraintBottom_toTopOf="@+id/ce"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/nueve"
+        app:layout_constraintTop_toBottomOf="@+id/por" />
+
+    <Button
+        android:id="@+id/por"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/por"
+        android:onClick="por"
+        app:layout_constraintBottom_toTopOf="@+id/igual"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/nueve"
         app:layout_constraintTop_toBottomOf="@+id/menos" />

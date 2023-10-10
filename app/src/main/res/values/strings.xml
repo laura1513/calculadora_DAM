@@ -15,4 +15,5 @@
     <string name="cero">0</string>
     <string name="resultado" />
     <string name="menos">-</string>
+    <string name="por">*</string>
 </resources>
