@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+    //Metodos a llamar en el onClick de activity_main.xml y se usarán para sobreescribir el TextView
     public void uno(View view) {
         TextView res = (TextView) findViewById(R.id.resultado);
         res.setText(res.getText()+"1");
